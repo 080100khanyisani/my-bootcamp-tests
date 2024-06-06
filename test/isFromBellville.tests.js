@@ -1,8 +1,15 @@
-describe('this test for isFromBellville', function () {
-    it('should show you how to use MochaJS', function () {
+describe('isFromBellville function test', function () {
+    it('should return true if registration number is from Bellville', function () {
         assert.equal(isFromBellville('CY 123'), true);
-        assert.equal(isFromBellville('CJ 123'), false);
+       
 
     });
+    
+    it('should return false if is not registration number is from Bellville', function () {
+        assert.equal(isFromBellville('CA 123'), false);
+
+    });
+
+
 
 });

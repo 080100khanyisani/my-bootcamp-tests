@@ -1,7 +1,9 @@
-describe('this test for isWeekday', function () {
-    it('should show you how to use MochaJS', function () {
+describe('isWeekday function test', function () {
+    it('isWeekday should return false if not weekdays', function () {
         assert.equal(isWeekday('Saturday'), false);
         assert.equal(isWeekday('Sunday'), false);
+    });
+    it('isWeekday should return true if it is the weekdays', function() {
         assert.equal(isWeekday('Monday'), true);
         assert.equal(isWeekday('Tuesday'), true);
         assert.equal(isWeekday('Wednesday'), true);
